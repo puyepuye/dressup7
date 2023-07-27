@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.rectangle {
+    //display: flex; /*WHEN I REMOVE THIS LINE IT WORKS*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 35vw;
+    //max-width: 50vw;
+    height: 70vh;
+    margin: 10vh auto;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    @media (max-width: 767px) {
+        width: 85vw; /* Adjust the value based on your needs */
+        max-width: 90vw; /* Adjust the value based on your needs */
+    }
+}
+
+.avatar-wrapper {
+    margin-top: 10px;
+    height: 55vh;
+}
+
+.avatar-display.placed {
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.avatar-display.placed img {
+    //max-width: 100%;
+    margin-top:20px;
+    max-height: 100%;
+    object-fit: contain;
+    position: absolute;
+    max-width: calc(100% - 30px); /* Adjust the value to create a margin of 10px on each side */
+    margin: 0 10px;
+}
+
+.text-section {
+    margin-top: 20px;
+}
+
+.button-section {
+    margin-top: 20px;
+}
+
+.pink-button {
+    display: inline-block;
+    padding: 12px 24px; /* Increase the padding to make the button longer */
+    border-radius: 25px; /* Increase or decrease the border-radius as desired */
+    background-color: #FF69B4;
+    color: white;
+    border: none;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.pink-button:hover {
+    background-color: #FF6BAF;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #90c4f4;
+}
+
+.footer p {
+    color: white;
+}
+
+.footer .oval-button{
+    /* Existing styles here */
+    border-radius: 5px; /* Adjust the value to make it more rectangular */
+    padding: 8px 16px; /* Adjust the padding as needed */
+    height: auto; /* Remove the fixed height */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    background-color: #90c4f4;
+    color: white;
+    border-color: white;
+    //box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-right: 10px; /* Adjust the value to add more space to the right */
+    border-radius: 50px; 
+}
+

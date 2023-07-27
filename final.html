@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Page</title>
+</head>
+
+<body>
+    <h1>Final Page</h1>
+    <p id="selectedChoices"></p>
+
+    <script>
+        // Get the selected choices from the URL parameter
+        var choices = [];
+        try {
+            choices = JSON.parse(decodeURIComponent(window.location.search.substr(1)).split('=')[1]);
+        } catch (error) {
+            console.error('Error parsing selected choices:', error);
+        }
+
+        // Display the selected choices in the paragraph element
+        var selectedChoicesElement = document.getElementById('selectedChoices');
+        selectedChoicesElement.textContent = choices.join(', ');
+    </script>
+</body>
+
+</html>

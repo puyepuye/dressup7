@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build a Beaver</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/comics" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img id="imglogoBAB" src="/assets/logoBAB.png">
+    </header>
+    <div class="backgroundimage">
+
+    </div>
+    <div class="avatar-wrapper">
+        <div class="avatar-display placed">
+            <img src="/assets/shadow.png">
+            <img src="/assets/body.png">
+
+            <img src="/assets/self/eyes/eyes1.png" alt="eyes" class="avatar-image" id="eyes-image">
+            <img src="/assets/self/ears/ears1.png" alt="ears" class="avatar-image" id="ears-image">
+            <img src="/assets/self/nose/nose1.png" alt="nose" class="avatar-image" id="nose-image">
+            <img src="/assets/self/mouth/mouth1.png" alt="mouth" class="avatar-image" id="mouth-image">
+            <img src="/assets/self/mouth/mouth1.png" alt="mouth" class="avatar-image" id="mouth-image">
+        </div>
+    </div>
+
+
+    <div class="controls">
+        <div class="controlButtons">
+            <div class="buttonContainers">
+                <a class="whiteButton" style="font-family:'Comics', san-serif;">self</a>
+                <a class="whiteButton" style="font-family:'Comics', san-serif;">gear</a>
+            </div>
+            <!--<a class="finishButton">done</a>-->
+            <a class="finishButton" onclick="redirectToResultPage()" style="font-family:'Comics', san-serif;">Done</a>
+
+        </div>
+        <div id="carousel1" class="carousel">
+            <!-- Carousel items -->
+            <!--
+            <div class="carousel-item">Eye Style</div>
+            <div class="carousel-item">Nose Style</div>
+            <div class="carousel-item">Mouth Style</div>
+            <div class="carousel-item">Head Style</div>-->
+        </div>
+        <span>
+            <div id="carousel2" class="carousel carousel2"></div>
+            <!-- Carousel items will be dynamically updated here -->
+    </div>
+    </span>
+    </div>
+    <!--
+    <footer>
+
+        <section class="footer-section">
+            <h1>Vote Damm for Student Council</h1>
+        </section>
+        <section class="footer-section">
+            <div class="image-container">
+                <img src="/assets/beav.png" alt="Image 1">
+                <img src="/assets/kmidslogo.png" alt="Image 2">
+            </div>
+        </section>
+    </footer>-->
+</body>
+
+
+</html>

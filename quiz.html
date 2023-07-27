@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+    <div class="background">
+        <div id="question" class="question"></div>
+        <div class="quiz-container">
+
+            <div class="choice-container">
+                <div id="choices"></div>
+            </div>
+
+        </div>
+        <div class="button-container">
+            <button id="prev" class="whiteButton">Prev</button>
+            <button id="next" class="whiteButton">Next</button>
+            <button id="submit" class="blueButton">Submit</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <button id="restart-button" onclick="redirectToResultPage()">&#x21bb;</button>
+        <div class="progress-container">
+            <div class="progress-bar">
+            </div>
+            <div style="color:white;" class="progress-text">0/0</div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="quiz.js"></script>
+</body>
+
+</html>
+
+<!--
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+    <div class="background">
+        <div id="question"></div>
+        <div class="quiz-container">
+            <table>
+                <tr>
+                    <td><div class="choice" id="choice1"></div></td>
+                    <td><div class="choice" id="choice2"></div></td>
+                </tr>
+                <tr>
+                    <td><div class="choice" id="choice3"></div></td>
+                    <td><div class="choice" id="choice4"></div></td>
+                </tr>
+            </table>
+        </div>
+        <div class="button-container">
+            <button id="prev">Previous</button>
+            <button id="next">Next</button>
+            <button id="submit">Submit</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <button id="restart-button">&#x21bb;</button>
+        <div class="progress-container">
+            <div class="progress-bar"></div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="quiz.js"></script>
+</body>
+
+</html>
+
+-->
